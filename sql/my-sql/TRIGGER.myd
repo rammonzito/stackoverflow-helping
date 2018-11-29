@@ -1,0 +1,4 @@
+/*Atualizar uma tabela com base no INSERT em outra*/
+
+CREATE TRIGGER Afeter_Insert_on_Aluguel AFTER INSERT ON ALUGUEL
+        UPDATE ESTOQUE SET Quantidade_Disponivel -= 1 WHERE Filme_Id = NEW.Filme_Id
