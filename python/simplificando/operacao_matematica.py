@@ -18,7 +18,7 @@ def __action__(self, other, op):
         return Matrix(result)
 
 #Calling method..
-__add__(other, operator.add)
+__add__(other, operator.add(fgh,xdfgh))
 __add__(other, operator.sub)
 
 #BEFORE
